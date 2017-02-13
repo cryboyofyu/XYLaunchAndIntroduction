@@ -5,7 +5,7 @@
 <br>QQ技术群:549943887</br>
 ___
 ###1.启动页
-    类型1:传统启动页 [size=1.1em]类型2:广告启动页
+    类型1:传统启动页                                                                   类型2:广告启动页
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow1.gif)
     
     ![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow2.gif)
