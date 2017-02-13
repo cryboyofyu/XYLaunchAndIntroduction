@@ -50,7 +50,7 @@ ___
   类型2:滑动浮层+广告
 <br>
 ![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchAndIntroShow1.gif)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchAndIntroShow2.gif)
 </br>
 <br></br>
