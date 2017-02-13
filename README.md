@@ -83,7 +83,6 @@ _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchAD];
        // 本地
         _xyLaunch.xyAdLocalImgName = @"XYAd.png";
         ```
----
 
 <br>**欢迎大家提意见，一起交流学习，会根据大家的反馈及时更新。谢谢！别忘了点个星哦～**<br/>
 <br>**如果小弟的一点点薄力可以给大家带来便利，小弟三生有幸！会再接再厉！您的支持就是我的动力！**<br/>
