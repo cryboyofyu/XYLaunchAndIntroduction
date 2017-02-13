@@ -154,10 +154,10 @@
     self.xyTimerLabel.layer.cornerRadius = 5;
     self.xyTimerLabel.userInteractionEnabled = YES;
     if(self.xyIsSkip){
-        self.xyTimerLabel.text = [NSString stringWithFormat:@"跳过 %ld",self.xyAdDuration];
+        self.xyTimerLabel.text = [NSString stringWithFormat:@"跳过 %ld",(long)self.xyAdDuration];
         
     }else{
-        self.xyTimerLabel.text = [NSString stringWithFormat:@"剩余 %ld",self.xyAdDuration];
+        self.xyTimerLabel.text = [NSString stringWithFormat:@"剩余 %ld",(long)self.xyAdDuration];
     }
     [self.view addSubview:self.xyTimerLabel];
     
