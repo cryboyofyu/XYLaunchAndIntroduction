@@ -7,8 +7,8 @@ ___
 ###1.启动页
     类型1:传统启动页
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow1.gif)</br>
-    类型2:广告启动页
-<br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow2.gif)</br>
+类型2:广告启动页
+    [image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow2.gif)
     类型3:app向导启动页
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow3.gif)</br>
     类型4:gif动态启动页
