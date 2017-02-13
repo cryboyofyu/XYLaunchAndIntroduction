@@ -4,14 +4,26 @@
 <br>个人邮箱：892569921@qq.com [我的CSDN](http://blog.csdn.net/cry__boy):http://blog.csdn.net/cry__boy <br/>
 <br>QQ技术群:549943887</br>
 ___
-###1.启动图
-    类型1:默认启动图
+###1.启动页
+    类型1:传统启动页
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow1.gif)</br>
-    类型2:广告启动图
+    类型2:广告启动页
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow2.gif)</br>
-    类型3:app向导启动图
+    类型3:app向导启动页
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow3.gif)</br>
-    类型4:gif动态启动图
+    类型4:gif动态启动页
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow4.gif)</br>
-    类型5:背景滚动启动图
+    类型5:背景滚动启动页
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchShow5.gif)</br>
+   
+###2.引导页
+   类型1:传统
+<br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYIntroShow1.gif)</br>
+ 类型2:滑动浮层+动态
+<br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYIntroShow2.gif)</br>
+ 类型3:自定义样式
+<br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYIntroShow3.gif)</br>
+ 类型4:滑动浮层+视频
+<br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYIntroShow4.gif)</br>
+ 类型5:自定义样式+视频
+<br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYIntroShow5.gif)</br>
