@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0087C3CEFAD8E1DAFF5E8263 /* libPods-XYLaunchAndIntroductionExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7744C31CB738F03E6B6A985 /* libPods-XYLaunchAndIntroductionExample.a */; };
+		142C31821E52CAF900AE620F /* UIImage+XYGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 142C31811E52CAF900AE620F /* UIImage+XYGif.m */; };
 		14566E501E4D93A100D59A89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14566E4F1E4D93A100D59A89 /* main.m */; };
 		14566E531E4D93A100D59A89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14566E521E4D93A100D59A89 /* AppDelegate.m */; };
 		14566E561E4D93A100D59A89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14566E551E4D93A100D59A89 /* ViewController.m */; };
@@ -62,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		142C31801E52CAF900AE620F /* UIImage+XYGif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XYGif.h"; sourceTree = "<group>"; };
+		142C31811E52CAF900AE620F /* UIImage+XYGif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XYGif.m"; sourceTree = "<group>"; };
 		14566E4B1E4D93A100D59A89 /* XYLaunchAndIntroductionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYLaunchAndIntroductionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14566E4F1E4D93A100D59A89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14566E511E4D93A100D59A89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -260,6 +263,8 @@
 			children = (
 				14566EC11E4DBB9D00D59A89 /* XYLaunchVC.h */,
 				14566EC21E4DBB9D00D59A89 /* XYLaunchVC.m */,
+				142C31801E52CAF900AE620F /* UIImage+XYGif.h */,
+				142C31811E52CAF900AE620F /* UIImage+XYGif.m */,
 			);
 			path = XYLaunch;
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 				14566E561E4D93A100D59A89 /* ViewController.m in Sources */,
 				14566E531E4D93A100D59A89 /* AppDelegate.m in Sources */,
 				14566EC31E4DBB9D00D59A89 /* XYIntroductionPage.m in Sources */,
+				142C31821E52CAF900AE620F /* UIImage+XYGif.m in Sources */,
 				14566E501E4D93A100D59A89 /* main.m in Sources */,
 				14566EC41E4DBB9D00D59A89 /* XYLaunchVC.m in Sources */,
 				14566E831E4D93D900D59A89 /* XYAdDetailVC.m in Sources */,

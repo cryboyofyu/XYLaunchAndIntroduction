@@ -20,8 +20,7 @@
 
 #import "XYLaunchVC.h"
 #import <UIImageView+WebCache.h>
-#import <UIImage+GIF.h>
-
+#import "UIImage+XYGif.h"
 #define XYScreenBounds [UIScreen mainScreen].bounds
 @interface XYLaunchVC ()<UIScrollViewDelegate>
 {
@@ -253,7 +252,7 @@
 - (void)xyLayoutGifImg{
     UIImageView * gifImgView = [[UIImageView alloc]initWithFrame:XYScreenBounds];
     if(self.xyGifImgName.length >0){
-//        gifImgView.image = [UIImage sd_animatedGIFNamed:self.xyGifImgName];
+        gifImgView.image = [UIImage xy_setAnimatedGIFWithGifName:self.xyGifImgName];
     }else if(self.xyGifImgUrl.length >0){
         [gifImgView sd_setImageWithURL:[NSURL URLWithString:self.xyGifImgUrl]];
     }

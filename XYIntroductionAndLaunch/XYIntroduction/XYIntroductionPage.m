@@ -156,7 +156,7 @@
         UIImageView * imgView = [[UIImageView alloc]init];
         if([suffix isEqualToString:@"gif"]){
             NSString * gifImgName = [obj componentsSeparatedByString:@"."][0];
-            imgView.image = [UIImage sd_animatedGIFNamed:gifImgName];
+            imgView.image = [UIImage xy_setAnimatedGIFWithGifName:gifImgName];
         }else {
             imgView.image = [UIImage imageNamed:obj];
             
@@ -368,7 +368,7 @@
     if([imgName componentsSeparatedByString:@"."].count>1&&[[imgName componentsSeparatedByString:@"."][1] isEqualToString:@"gif"]){
         
         NSString * gifImgName = [imgName componentsSeparatedByString:@"."][0];
-        imgView.image = [UIImage sd_animatedGIFNamed:gifImgName];
+        imgView.image = [UIImage xy_setAnimatedGIFWithGifName:gifImgName];
                }else{
                    imgView.image = [UIImage imageNamed:imgName];
     }

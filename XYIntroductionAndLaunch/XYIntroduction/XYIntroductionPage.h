@@ -20,7 +20,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import <UIImage+GIF.h>
+#import "UIImage+XYGif.h"
 @protocol XYIntroductionDelegate <NSObject>
 
 - (void)xyIntroductionViewEnterTap:(id)sender;
