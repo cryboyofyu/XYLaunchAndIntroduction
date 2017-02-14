@@ -21,11 +21,10 @@ Pod::Spec.new do |s|
   s.source_files  = "XYIntroductionAndLaunch/**/*.{h,m}"
   s.resources = "XYLaunchAndIntroductionExample/XYLaunchAndIntroductionExample/XYTestImgs/*.{gif,jpg,png,jpeg}"
 
-  s.frameworks = "AVFoundation", "UIKit"
+  s.frameworks = "AVFoundation", "UIKit","ImageIO"
 
 
   s.requires_arc = true
 
-  s.dependency 'SDWebImage' 
-  s.dependency 'FLAnimatedImage'
+  s.dependency 'SDWebImage', "4.0.0"
 end
