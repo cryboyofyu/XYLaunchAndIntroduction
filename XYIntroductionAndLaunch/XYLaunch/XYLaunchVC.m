@@ -253,7 +253,7 @@
 - (void)xyLayoutGifImg{
     UIImageView * gifImgView = [[UIImageView alloc]initWithFrame:XYScreenBounds];
     if(self.xyGifImgName.length >0){
-        gifImgView.image = [UIImage sd_animatedGIFNamed:self.xyGifImgName];
+//        gifImgView.image = [UIImage sd_animatedGIFNamed:self.xyGifImgName];
     }else if(self.xyGifImgUrl.length >0){
         [gifImgView sd_setImageWithURL:[NSURL URLWithString:self.xyGifImgUrl]];
     }
