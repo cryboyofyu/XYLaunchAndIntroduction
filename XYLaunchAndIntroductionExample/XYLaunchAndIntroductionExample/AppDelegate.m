@@ -228,6 +228,7 @@
     //[_xyLaunch xy_startFire];//和引导页(XYIntroductionPage)一起用的时候加上这句
 }
 
+//自定义登录按钮
 - (void)xyLogin{
     [_xyIntroductionPage  xyStopTimer];
     _xyIntroductionPage = nil;
