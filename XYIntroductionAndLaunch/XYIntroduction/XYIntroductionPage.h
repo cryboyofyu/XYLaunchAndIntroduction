@@ -49,7 +49,7 @@
 
 - (instancetype)init;
 
-
+- (void)xyStopTimer;
 
 @end
 

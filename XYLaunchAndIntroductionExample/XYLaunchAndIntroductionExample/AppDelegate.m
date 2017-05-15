@@ -56,10 +56,10 @@
 //        _xyLaunch.xyNormalImgUrl = @"http://img.zcool.cn/community/011c9655935c3c6ac7253264bee6ef.jpg";
     
 #pragma mark-xy -广告
-        _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchAD];
-        _xyLaunch.xyAdDuration = 4;
-        _xyLaunch.xyDelegate = self;
-        _xyLaunch.xyAdActionUrl = @"https://github.com/cryboyofyu";
+//        _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchAD];
+//        _xyLaunch.xyAdDuration = 4;
+//        _xyLaunch.xyDelegate = self;
+//        _xyLaunch.xyAdActionUrl = @"https://github.com/cryboyofyu";
 //        _xyLaunch.xyIsCloseTimer = YES;//跟引导页(XYIntroductionPage)一起用的时候要打开/否则关闭
         //网络
 //        _xyLaunch.xyAdImgUrl = @"http://pic.qiantucdn.com/58pic/17/76/58/24K58PICsEp_1024.jpg";
@@ -100,16 +100,16 @@
 //    
 //        [_xyLaunch.xyRollFrontView addSubview:titleLable];
 
-        self.window.rootViewController = _xyLaunch;
+//        self.window.rootViewController = _xyLaunch;
     
 #pragma mark-xy -引导页
-//    _xyCoverImgNameArr = @[@"Guide_pages_one.png", @"Guide_pages_two.png", @"Guide_pages_three.png"];
-//    _xyBgImgNameArr = @[@"Guide_pages_BGone.png", @"Guide_pages_BGtwo.png", @"Guide_pages_BGthree.png"];
-//    //分别为:example1,example2,example3,example4,example5
-//    _xyIntroductionPage = [self example1];
+    _xyCoverImgNameArr = @[@"Guide_pages_one.png", @"Guide_pages_two.png", @"Guide_pages_three.png"];
+    _xyBgImgNameArr = @[@"Guide_pages_BGone.png", @"Guide_pages_BGtwo.png", @"Guide_pages_BGthree.png"];
+    //分别为:example1,example2,example3,example4,example5
+    _xyIntroductionPage = [self example5];
     
-//    self.window.rootViewController = xyVC;//只用引导页的时候打开此项
-//    [self.window addSubview:_xyIntroductionPage.view];
+    self.window.rootViewController = xyVC;//只用引导页的时候打开此项
+    [self.window addSubview:_xyIntroductionPage.view];
 
 
     return YES;
@@ -204,14 +204,20 @@
     loginButton.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     [loginButton setTitle:@"Login" forState:UIControlStateNormal];
     
+    [loginButton addTarget:self action:@selector(xyLogin) forControlEvents:UIControlEventTouchUpInside];
+    
+
+    
     XYIntroductionPage * xyPage = [[XYIntroductionPage alloc]init];
-    xyPage.xyPageControl.hidden = YES;
+//    xyPage.xyPageControl.hidden = YES;
     xyPage.xyLabelAttributesDic = @{ NSFontAttributeName : [UIFont fontWithName:@"Arial-BoldMT" size:18.0],
                                      NSForegroundColorAttributeName : [UIColor whiteColor] };
     xyPage.xyVideoUrl = _xyVideoUrl;
     xyPage.xyCoverTitlesArr = _xyCoverTitleArr;
     xyPage.xyAutoScrolling = YES;
     xyPage.xyPageControlOffSet = CGPointMake(0, -100);
+    xyPage.xyDelegate = self;
+
     [xyPage.view addSubview:loginButton];
     return  xyPage;
 }
@@ -219,10 +225,13 @@
 //进入按钮事件
 - (void)xyIntroductionViewEnterTap:(id)sender{
     _xyIntroductionPage = nil;
-    [_xyLaunch xy_startFire];//和引导页(XYIntroductionPage)一起用的时候加上这句
-
+    //[_xyLaunch xy_startFire];//和引导页(XYIntroductionPage)一起用的时候加上这句
 }
 
+- (void)xyLogin{
+    [_xyIntroductionPage  xyStopTimer];
+    _xyIntroductionPage = nil;
+}
 
 
 @end

@@ -226,7 +226,7 @@
         self.xyEnterBtn.frame = [self xyLayoutEnterBtnFrame];
     }
     [self.xyEnterBtn addTarget:self action:@selector(xyEnter:) forControlEvents:UIControlEventTouchUpInside];
-    self.xyEnterBtn.alpha = 0;
+//    self.xyEnterBtn.alpha = 0;
 }
 
 - (CGRect)xyLayoutPageControlFrame{
