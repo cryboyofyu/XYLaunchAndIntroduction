@@ -19,7 +19,7 @@
 
 
 #import "XYLaunchVC.h"
-#import <UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 #import "UIImage+XYGif.h"
 #define XYScreenBounds [UIScreen mainScreen].bounds
 @interface XYLaunchVC ()<UIScrollViewDelegate>
