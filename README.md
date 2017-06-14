@@ -58,7 +58,7 @@ ___
 <br>![image](https://github.com/cryboyofyu/XYLaunchAndIntroduction/blob/master/XYShowImgs/XYLaunchAndIntroShow3.gif)</br>
 <br>添加方法：cocoapods<br/>
 <br>pod ‘XYLaunchAndIntroduction’<br/> 
-<br>依赖库:'SDWebImage'<br/>
+<br>依赖库:'SDWebImage',如果项目中已经有该库了，删掉再pod<br/>
 <br>1.方法：<br/>
 ```objective-c
 具体请下载看demo

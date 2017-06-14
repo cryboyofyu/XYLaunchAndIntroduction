@@ -10,7 +10,7 @@
 //                                                     ******************       *
 // *github:https://github.com/cryboyofyu              *   ************   *     *
 // *博客:   http://blog.csdn.net/cry__boy                       *              *
-// *技术支持QQ群:549943887(三月份之前免费)                       *******          *
+// *技术支持QQ群:549943887                     *******          *
 // *别忘了github上给个star哦~                                     *            *
 // *别忘了github上给个star哦~                                  *  *           *
 // *别忘了github上给个star哦~                                     *          *
@@ -19,7 +19,7 @@
 
 
 #import "XYLaunchVC.h"
-#import "UIImageView+WebCache.h"
+#import <UIImageView+WebCache.h>
 #import "UIImage+XYGif.h"
 #define XYScreenBounds [UIScreen mainScreen].bounds
 @interface XYLaunchVC ()<UIScrollViewDelegate>
