@@ -323,6 +323,9 @@
 - (void)xyPageControlChangePage:(UIScrollView *)pageScrollView{
     
     if([self xyIsLastPage:_xyPageControl]){
+        if(!self.xyIsAutoEnterOn){
+            self.xyPageScrollView.bounces = NO;
+        }
         if(_xyPageControl.alpha == 1){
             [UIView animateWithDuration:1 animations:^{
                 _xyEnterBtn.alpha = 1;
@@ -405,6 +408,7 @@
             view.alpha = xyAlpha;
         }
     }
+    
     [_xyPageControl setCurrentPage:[self xyGetCurrentPage]];
     [self xyPageControlChangePage:scrollView];
     if(scrollView.isTracking){
@@ -418,7 +422,7 @@
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
     if([scrollView.panGestureRecognizer translationInView:scrollView.superview].x<0){
-        if(![self xyIsGoOnNext:_xyPageControl]){
+        if(![self xyIsGoOnNext:_xyPageControl]&&self.xyIsAutoEnterOn){
             [self xyEnter:nil];
         }
     }

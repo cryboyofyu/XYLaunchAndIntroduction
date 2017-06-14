@@ -44,7 +44,7 @@
     
     ViewController * xyVC = [[ViewController alloc]init];
     
-#pragma mark-xy －启动页
+#pragma mark-xy －启动页-------------------------------------------------
     
 #pragma mark-xy -默认
 //      _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchNormal];
@@ -102,13 +102,13 @@
 
 //        self.window.rootViewController = _xyLaunch;
     
-#pragma mark-xy -引导页
+#pragma mark-xy -引导页-----------------------------------------------------
     _xyCoverImgNameArr = @[@"Guide_pages_one.png", @"Guide_pages_two.png", @"Guide_pages_three.png"];
     _xyBgImgNameArr = @[@"Guide_pages_BGone.png", @"Guide_pages_BGtwo.png", @"Guide_pages_BGthree.png"];
-    //分别为:example1,example2,example3,example4,example5
-    _xyIntroductionPage = [self example5];
+    //可以更换样式,分别为:example1,example2,example3,example4,example5
+    _xyIntroductionPage = [self example2];
     
-    self.window.rootViewController = xyVC;//只用引导页的时候打开此项
+    self.window.rootViewController = xyVC;//只用引导页的时候打开此项/跟启动页一起用的时候注释掉
     [self.window addSubview:_xyIntroductionPage.view];
 
 

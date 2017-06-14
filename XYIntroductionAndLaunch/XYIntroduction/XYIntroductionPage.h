@@ -33,6 +33,7 @@
 @property (nonatomic,strong)UIButton     * xyEnterBtn;//进入按钮
 @property (nonatomic,assign)BOOL           xyAutoScrolling;//是否自动滚动
 @property (nonatomic,assign)BOOL           xyAutoLoopPlayVideo;//是否自动循环播放
+@property (nonatomic,assign)BOOL           xyIsAutoEnterOn;//是否滑到最后一张进入
 @property (nonatomic,assign)CGPoint        xyPageControlOffSet;//pageControl默认偏移量
 @property (nonatomic,strong)UIPageControl *xyPageControl;//引导pageControl
 
