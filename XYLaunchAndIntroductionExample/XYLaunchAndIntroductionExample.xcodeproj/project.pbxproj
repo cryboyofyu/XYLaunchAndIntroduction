@@ -356,6 +356,7 @@
 				TargetAttributes = {
 					14566E4A1E4D93A100D59A89 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = B4QH3RK3YY;
 						ProvisioningStyle = Automatic;
 					};
 					14566E631E4D93A100D59A89 = {
@@ -649,9 +650,10 @@
 			baseConfigurationReference = 552BD4996D86ED71ECF829D7 /* Pods-XYLaunchAndIntroductionExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4QH3RK3YY;
 				INFOPLIST_FILE = XYLaunchAndIntroductionExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = XY.XYLaunchAndIntroductionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = XY.YLaunchAndIntroductionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -661,9 +663,10 @@
 			baseConfigurationReference = 8165AC983B6487453F2C6BCA /* Pods-XYLaunchAndIntroductionExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4QH3RK3YY;
 				INFOPLIST_FILE = XYLaunchAndIntroductionExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = XY.XYLaunchAndIntroductionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = XY.YLaunchAndIntroductionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

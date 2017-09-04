@@ -42,74 +42,23 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    ViewController * xyVC = [[ViewController alloc]init];
     
 #pragma mark-xy －启动页-------------------------------------------------
-    
-#pragma mark-xy -默认
-//      _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchNormal];
-//        _xyLaunch.xyNormalDuration = 2;
-//    //本地
-////      _xyLaunch.xyNormalImgName = @"LaunchImg";
-//    //网络
-//    _xyLaunch.xyIsCloseTimer = YES;//跟引导页(XYIntroductionPage)一起用的时候要打开/否则关闭
-//        _xyLaunch.xyNormalImgUrl = @"http://img.zcool.cn/community/011c9655935c3c6ac7253264bee6ef.jpg";
+#pragma mark-xy 启动页1 -默认
+//    [self xyNormalLaunch];
     
 #pragma mark-xy -广告
-//        _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchAD];
-//        _xyLaunch.xyAdDuration = 4;
-//        _xyLaunch.xyDelegate = self;
-//        _xyLaunch.xyAdActionUrl = @"https://github.com/cryboyofyu";
-//        _xyLaunch.xyIsCloseTimer = YES;//跟引导页(XYIntroductionPage)一起用的时候要打开/否则关闭
-        //网络
-//        _xyLaunch.xyAdImgUrl = @"http://pic.qiantucdn.com/58pic/17/76/58/24K58PICsEp_1024.jpg";
-       // 本地
-        _xyLaunch.xyAdLocalImgName = @"XYAd.png";
+//    [self xyAdLaunch];
     
 #pragma mark-xy -新手向导
-//        _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchGuide];
-//        //本地
-//        _xyLaunch.xyGuideImgNameArr = @[@"XYGuide1.jpeg",@"XYGuide2.jpeg"];
-//        //网络
-////        _xyLaunch.xyGuideImgUrlArr = @[@"http://pic107.nipic.com/file/20160821/6189380_063051282000_2.jpg",@"http://img.zcool.cn/community/010b6d55424e510000019ae915f419.jpg"];
-    
-#pragma mark-xy -gif动态图
-//        _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchGif];
-//    //本地
-//        _xyLaunch.xyGifImgName = @"XY01";
-//    //网络
-////        _xyLaunch.xyGifImgUrl = @"http://image76.360doc.com/DownloadImg/2014/07/1510/43430258_28";
+//    [self xyApplicationGuide];
     
 #pragma mark-xy -自动滚动
-//        _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchAutoRoll];
-//        //本地
-//    //    xyLaunch.xyRollImgName = @"XYRoll4.jpeg";
-//        //网络
-//        _xyLaunch.xyRollImgUrl  = @"http://attachments.gfan.com/forum/attachments2/201305/06/161415293nymj1zby0j1uy.jpg";
-//        _xyLaunch.xyFrontViewBgColor = [UIColor clearColor];
-//     //自定义加浮层控件
-//        UILabel *titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, 100,[UIScreen mainScreen].bounds.size.width , 60)];
-//    
-//        titleLable.font = [UIFont fontWithName:@"Helvetica-Bold" size:20];
-//    
-//        titleLable.textColor = [UIColor whiteColor];
-//    
-//        titleLable.textAlignment = NSTextAlignmentCenter;
-//    
-//        titleLable.text = @"别忘了给个star哦~";
-//    
-//        [_xyLaunch.xyRollFrontView addSubview:titleLable];
-
-//        self.window.rootViewController = _xyLaunch;
+//    [self xyCoverLaunch];
+    
     
 #pragma mark-xy -引导页-----------------------------------------------------
-    _xyCoverImgNameArr = @[@"Guide_pages_one.png", @"Guide_pages_two.png", @"Guide_pages_three.png"];
-    _xyBgImgNameArr = @[@"Guide_pages_BGone.png", @"Guide_pages_BGtwo.png", @"Guide_pages_BGthree.png"];
-    //可以更换样式,分别为:example1,example2,example3,example4,example5
-    _xyIntroductionPage = [self example2];
-    
-    self.window.rootViewController = xyVC;//只用引导页的时候打开此项/跟启动页一起用的时候注释掉
-    [self.window addSubview:_xyIntroductionPage.view];
+    [self xyLoadIntroductionPageWithExampleType:2];
 
 
     return YES;
@@ -123,6 +72,125 @@
     detailVC.xyWebUrl = @"https://github.com/cryboyofyu";
     detailVC.xyRootVC = xyVC.xyRootVC;
     [xyVC presentViewController:detailVC animated:YES completion:nil];
+}
+#pragma mark-xy ---------------------------------启动页-------------------------------
+#pragma mark-xy 启动页1 -默认
+- (void)xyNormalLaunch{
+    ViewController * xyVC = [[ViewController alloc]init];
+
+    _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchNormal];
+    _xyLaunch.xyNormalDuration = 2;
+    //本地
+    _xyLaunch.xyNormalImgName = @"LaunchImg";
+    //网络
+    //    _xyLaunch.xyIsCloseTimer = YES;//跟引导页(XYIntroductionPage)一起用的时候要打开/否则关闭
+//        _xyLaunch.xyNormalImgUrl = @"http://img.zcool.cn/community/011c9655935c3c6ac7253264bee6ef.jpg";
+    self.window.rootViewController = _xyLaunch;
+
+}
+
+#pragma mark-xy 启动页2 -广告
+- (void)xyAdLaunch{
+    ViewController * xyVC = [[ViewController alloc]init];
+
+    _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchAD];
+    _xyLaunch.xyAdDuration = 4;
+    _xyLaunch.xyDelegate = self;
+    _xyLaunch.xyAdActionUrl = @"https://github.com/cryboyofyu";
+//    _xyLaunch.xyIsCloseTimer = YES;//跟引导页(XYIntroductionPage)一起用的时候要打开/否则关闭
+// 网络
+//    _xyLaunch.xyAdImgUrl = @"http://pic.qiantucdn.com/58pic/17/76/58/24K58PICsEp_1024.jpg";
+// 本地
+        _xyLaunch.xyAdLocalImgName = @"XYAd.png";
+    self.window.rootViewController = _xyLaunch;
+
+}
+
+#pragma mark-xy 启动页3 -新手向导
+- (void)xyApplicationGuide{
+
+      ViewController * xyVC = [[ViewController alloc]init];
+      _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchGuide];
+        //本地
+      _xyLaunch.xyGuideImgNameArr = @[@"XYGuide1.jpeg",@"XYGuide2.jpeg"];
+        //网络
+    // _xyLaunch.xyGuideImgUrlArr = @[@"http://pic107.nipic.com/file/20160821/6189380_063051282000_2.jpg",@"http://img.zcool.cn/community/010b6d55424e510000019ae915f419.jpg"];
+
+    #pragma mark-xy -gif动态图
+   /* _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchGif];
+        //本地
+    _xyLaunch.xyGifImgName = @"XY01";
+       //网络
+    //_xyLaunch.xyGifImgUrl = @"http://image76.360doc.com/DownloadImg/2014/07/1510/43430258_28";
+    */
+    
+    self.window.rootViewController = _xyLaunch;
+
+}
+
+#pragma mark-xy 启动页4 -自滚动浮层样式
+- (void)xyCoverLaunch{
+    ViewController * xyVC = [[ViewController alloc]init];
+    
+    _xyLaunch = [[XYLaunchVC alloc]initWithRootVC:xyVC withLaunchType:XYLaunchAutoRoll];
+    //本地
+    _xyLaunch.xyRollImgName = @"XYRoll4.jpeg";
+    //网络
+//    _xyLaunch.xyRollImgUrl  = @"http://attachments.gfan.com/forum/attachments2/201305/06/161415293nymj1zby0j1uy.jpg";
+    _xyLaunch.xyFrontViewBgColor = [UIColor clearColor];
+ //自定义加浮层控件
+    UILabel *titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0, 100,[UIScreen mainScreen].bounds.size.width , 60)];
+
+    titleLable.font = [UIFont fontWithName:@"Helvetica-Bold" size:20];
+
+    titleLable.textColor = [UIColor whiteColor];
+
+    titleLable.textAlignment = NSTextAlignmentCenter;
+
+    titleLable.text = @"别忘了给个star哦~";
+
+    [_xyLaunch.xyRollFrontView addSubview:titleLable];
+
+    self.window.rootViewController = _xyLaunch;
+ 
+}
+
+
+#pragma mark-xy ---------------------------------引导页-------------------------------
+- (void)xyLoadIntroductionPageWithExampleType:(int)type{
+    ViewController * xyVC = [[ViewController alloc]init];
+
+    _xyCoverImgNameArr = @[@"Guide_pages_one.png", @"Guide_pages_two.png", @"Guide_pages_three.png"];
+    _xyBgImgNameArr = @[@"Guide_pages_BGone.png", @"Guide_pages_BGtwo.png", @"Guide_pages_BGthree.png"];
+    //可以更换样式,分别为:example1,example2,example3,example4,example5
+    switch (type) {
+        case 1:
+            _xyIntroductionPage = [self example1];
+
+            break;
+        case 2:
+            _xyIntroductionPage = [self example2];
+
+            break;
+        case 3:
+            _xyIntroductionPage = [self example3];
+
+            break;
+        case 4:
+            _xyIntroductionPage = [self example4];
+
+            break;
+        case 5:
+            _xyIntroductionPage = [self example5];
+
+            break;
+            
+        default:
+            break;
+    }
+    
+    self.window.rootViewController = xyVC;//只用引导页的时候打开此项/跟启动页一起用的时候注释掉
+    [self.window addSubview:_xyIntroductionPage.view];
 }
 
 //传统引导页
